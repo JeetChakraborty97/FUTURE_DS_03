@@ -24,14 +24,14 @@ Link: https://www.kaggle.com/datasets/ruchi798/student-feedback-survey-responses
 * Records Analysed: 1001 student responses
 
 The dataset consists of numerical ratings provided by students on a scale of 1 to 10 for the following aspects: 
-• Subject Knowledge 
-• Teaching Clarity 
-• Use of Presentations 
-• Assignment Difficulty 
-• Doubt Solving 
-• Course Structure 
-• Student Support 
-• Course Recommendation 
+* Subject Knowledge
+* Teaching Clarity
+* Use of Presentations
+* Assignment Difficulty
+* Doubt Solving
+* Course Structure
+* Student Support
+* Course Recommendation 
 
 Each row represents feedback from one student.
 
