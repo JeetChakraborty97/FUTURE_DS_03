@@ -194,9 +194,61 @@ plt.title("Correlation Between Feedback Parameters")
 plt.show()
 ```
 Here is the output:
+<img width="1057" height="790" alt="11" src="https://github.com/user-attachments/assets/e8ac0417-920b-44ce-89f8-89ed6de577d3" />
 
+Insight: There is a strong link between clarity of explanation and course structure.
 
+### Moving on to Top & Weak Areas Identification.
 
+* Finding top 3 strengths.
 
+```python
+avg_ratings.head(3)
+```
+Here is the output:
+<img width="1052" height="72" alt="12" src="https://github.com/user-attachments/assets/de3535ab-2e30-4c1b-a2d1-da9d3ce87c4d" />
 
+* Finding the bottom 3 improvement areas.
 
+```python
+avg_ratings.tail(3)
+```
+Here is the output:
+<img width="1066" height="77" alt="13" src="https://github.com/user-attachments/assets/cf29da0b-70d8-4ab5-8ed3-4046ca228e35" />
+
+## Key Insights
+* Overall student satisfaction is generally high across the dataset.
+* Teaching quality and subject expertise are clear strengths.
+* Assignment difficulty and student support consistently score lower than other parameters.
+* Improvements in course structure and support services could significantly raise satisfaction levels.
+* Student recommendations are strongly influenced by teaching clarity and subject understanding.
+
+## Key Recommendations
+
+Based on the analysis, the following actions are recommended: 
+
+### 1. Improve Assignment Design 
+
+* Balance difficulty with clarity 
+* Provide detailed guidelines and examples 
+
+### 2. Enhance Student Support Systems 
+
+* Introduce more doubt-clearing sessions 
+* Improve access to academic assistance 
+
+### 3. Refine Course Structure 
+
+* Organise content in a more progressive learning flow 
+* Clearly define learning outcomes for each module 
+
+### 4. Leverage Teaching Strengths 
+
+* Encourage best practices from high-performing instructors 
+* Use peer mentoring and teaching workshops
+
+# Conclusion
+
+This project demonstrates how structured student feedback can be transformed into actionable insights using data analysis techniques. By combining rating analysis, sentiment categorisation, and visualisation, the study provides a clear understanding of student satisfaction and highlights areas that require attention.
+
+The findings can support academic decision-making, improve learning experiences, and enhance overall institutional effectiveness.
