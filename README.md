@@ -54,12 +54,76 @@ sns.set()
 df = pd.read_csv("D:\Career\Internships\Future Interns\Task 3\Dataset\student_feedback.csv")
 df.head()
 ```
+Here is the snippet of the dataset loaded:
+<img width="1169" height="245" alt="1" src="https://github.com/user-attachments/assets/e03bbb14-8689-43f4-b620-6e250059045b" />
 
+### Understanding the dataset structure.
 
+First Step:
 
+```python
+df.info()
+```
+Here is the output:
+<img width="1187" height="290" alt="2" src="https://github.com/user-attachments/assets/a8a54065-7054-4edc-bffa-3b102a75d4b6" />
 
+Second Step:
 
+```python
+df.describe()
+```
+Here is the output:
+<img width="1182" height="358" alt="3" src="https://github.com/user-attachments/assets/07a21d8b-7ab2-4f21-b129-934d42b7672a" />
 
+### Moving to Data Cleaning.
+
+Dropping Unnecessary Column: The column "Unnamed:" 0 is just an index. So, I've decided to drop it.
+
+```python
+df.drop(columns=['Unnamed: 0'], inplace=True)
+```
+
+Checking missing values.
+
+```python
+df.isnull().sum()
+```
+Here is the output:
+<img width="1169" height="177" alt="4" src="https://github.com/user-attachments/assets/5f7dee7a-f177-4649-8f66-dd30bffb38d2" />
+
+Result: No missing values found.
+
+### Moving to Overall Satisfaction Analysis.
+
+* Creating an Overall Satisfaction Score.
+
+```python
+df['Overall_Satisfaction'] = df.iloc[:, 1:].mean(axis=1)
+df.head()
+```
+Here is the output:
+<img width="1179" height="261" alt="5" src="https://github.com/user-attachments/assets/7e277faa-5719-48dc-b5b3-4cd2eecdf0eb" />
+
+* Finding the distribution of Overall Satisfaction.
+
+```python
+plt.figure(figsize=(8,5))
+plt.hist(df['Overall_Satisfaction'], bins=10)
+plt.xlabel("Overall Satisfaction Score")
+plt.ylabel("Number of Students")
+plt.title("Distribution of Overall Satisfaction")
+plt.show()
+```
+Here is the output:
+<img width="1165" height="483" alt="6" src="https://github.com/user-attachments/assets/403b64d9-53ed-43c6-b1d4-3cbda329d5e0" />
+
+Insight: Most of the satisfaction scores are clustered around the middle point. So, most of the students have a moderate satisfaction rate.
+
+### Moving on to Average Rating per Parameter.
+```python
+avg_ratings = df.iloc[:, 1:-1].mean().sort_values(ascending=False)
+avg_ratings
+```
 
 
 
