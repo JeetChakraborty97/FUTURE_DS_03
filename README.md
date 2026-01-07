@@ -80,7 +80,7 @@ Here is the output:
 
 ### Moving to Data Cleaning.
 
-Dropping Unnecessary Column: The column "Unnamed:" 0 is just an index. So, I've decided to drop it.
+Dropping Unnecessary Column: The column "Unnamed: 0" is just an index. So, I've decided to drop it.
 
 ```python
 df.drop(columns=['Unnamed: 0'], inplace=True)
