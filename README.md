@@ -3,6 +3,8 @@ Repository for Task 3 of the Data Science &amp; Analytics Internship at Future I
 
 # Student Feedback Analysis
 
+<img width="1536" height="1024" alt="ChatGPT Image Jan 7, 2026, 08_42_10 PM" src="https://github.com/user-attachments/assets/cf7c480a-197f-42e0-8d15-f760d199b357" />
+
 # Overview
 ## Project Overview
 
