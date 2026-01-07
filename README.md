@@ -42,7 +42,7 @@ Each row represents feedback from one student.
 
 ## Step-by-Step Process (With Codes and Visuals)
 
-### Importing all the necessary libraries & Other Necessary Things.
+### Importing all the necessary libraries & other necessary things.
 ```python
 import pandas as pd
 import numpy as np
