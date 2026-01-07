@@ -40,7 +40,7 @@ Each row represents feedback from one student.
 * Python: Pandas, Numpy, Matplotlib, Seaborn.
 * Jupyter Notebook: Workspace.
 
-## Step-by-Step Process (With Code and Visuals)
+## Step-by-Step Process (With Codes and Visuals)
 
 ### Importing all the necessary libraries & Other Necessary Things.
 ```python
