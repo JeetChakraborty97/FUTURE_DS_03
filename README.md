@@ -127,6 +127,75 @@ Insight: Most of the satisfaction scores are clustered around the middle point. 
 avg_ratings = df.iloc[:, 1:-1].mean().sort_values(ascending=False)
 avg_ratings
 ```
+Here is the output:
+<img width="1159" height="167" alt="7" src="https://github.com/user-attachments/assets/52ecc983-cab2-48fc-90a2-089aa1e99169" />
+
+* Providing the visualisation for it with a Bar Chart.
+
+```python
+plt.figure(figsize=(10,6))
+avg_ratings.plot(kind='bar')
+plt.ylabel("Average Rating")
+plt.title("Average Ratings by Feedback Category")
+plt.xticks(rotation=45, ha='right')
+plt.show()
+```
+Here is the output:
+<img width="1162" height="785" alt="8" src="https://github.com/user-attachments/assets/f4c41a69-d32b-4528-b5b2-9cb352d38dc5" />
+
+Insight: From the chart, we can see that students have rated the experience of the teacher as the highest among all the categories. Other categories have received fairly similar ratings.
+
+### Moving on to Satisfaction Level Classification.
+
+* Creating Satisfaction Labels.
+
+```python
+def satisfaction_label(score):
+    if score >= 7:
+        return "Positive"
+    elif score >= 4:
+        return "Neutral"
+    else:
+        return "Negative"
+
+df['Satisfaction_Level'] = df['Overall_Satisfaction'].apply(satisfaction_label)
+```
+
+* Creating Distribution of Satisfaction Levels.
+
+```python
+df['Satisfaction_Level'].value_counts()
+```
+Here is the output:
+<img width="1181" height="95" alt="9" src="https://github.com/user-attachments/assets/3cff7b17-bacd-4d52-9317-38d69309083a" />
+
+* Creating Pie Chart visualization.
+
+```python
+df['Satisfaction_Level'].value_counts().plot(
+    kind='pie',
+    autopct='%1.1f%%',
+    figsize=(6,6),
+    title="Student Satisfaction Levels"
+)
+plt.ylabel("")
+plt.show()
+```
+Here is the output:
+<img width="1172" height="514" alt="10" src="https://github.com/user-attachments/assets/ac14b80b-f254-43c0-b759-4ed2ee07b5ea" />
+
+Insight: Most of the students are showing 'Neutral' satisfaction level and signaling a neutral sentiment.
+
+### Moving on to Correlation Analysis.
+```python
+plt.figure(figsize=(10,6))
+sns.heatmap(df.iloc[:,1:-2].corr(), annot=True, cmap='coolwarm')
+plt.title("Correlation Between Feedback Parameters")
+plt.show()
+```
+Here is the output:
+
+
 
 
 
