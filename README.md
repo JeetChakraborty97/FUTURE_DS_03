@@ -11,10 +11,10 @@ Repository for Task 3 of the Data Science &amp; Analytics Internship at Future I
 The objective of this project is to analyse student feedback data collected after academic courses and learning experiences, identify satisfaction patterns, and extract actionable insights that can help improve teaching quality and overall student experience.
 
 The analysis focuses on: 
-• Understanding rating trends across multiple feedback parameters 
-• Measuring overall satisfaction levels 
-• Deriving sentiment categories based on quantitative feedback 
-• Providing data-driven recommendations for improvement
+* Understanding rating trends across multiple feedback parameters
+* Measuring overall satisfaction levels
+* Deriving sentiment categories based on quantitative feedback
+* Providing data-driven recommendations for improvement
 
 ## Dataset Overview
 
